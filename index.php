@@ -1,12 +1,11 @@
 <?php
 //creare un array con domanda e risposte
 $faq = [
-    'd' => 'Come state implementando la recente decisione della Corte di giustizia dell \'Unione europea (CGUE) relativa al diritto all \'oblio?'
-    'r' => 'La recente decisione della Corte di giustizia dell \'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.'
+    [
+        'd' => 'Come state implementando la recente decisione della Corte di giustizia dell \'Unione europea (CGUE) relativa al diritto all \'oblio?',
+        'r' => 'La recente decisione della Corte di giustizia dell \'Unione europea ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi.',
+    ]
 ];
-//fare un ciclo for each con i contenuti dell'array
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +17,17 @@ $faq = [
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <?php 
+        foreach($faq as $value){
+            ?>
+            <h2>
+                <?php echo $value['d']?>
+            </h2>
+            <p>
+                <?php echo $value['r']?>
+        </p>
+            <?php
+        }
+    ?>
 </body>
 </html>

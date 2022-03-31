@@ -4,7 +4,7 @@ body{
     padding-top: 50px;
 }
 
-h2{
+h2,h3{
     color: #3c4043;
 }
 
@@ -14,4 +14,16 @@ p{
 
 div p:last-child{
     padding-bottom: 50px;
+}
+
+ol{
+    padding-bottom: 10px;
+}
+
+ul{
+    padding-top: 10px;
+}
+
+li{
+    padding-bottom: 10px;
 }
